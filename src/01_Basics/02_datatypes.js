@@ -13,7 +13,7 @@ let isLoggedIn = false;
 // bigIn
 // string => ""
 
-console.log(typeof "sarfaraz");
+console.log(typeof("sarfaraz"));
 console.log(typeof age);
 console.log(typeof null);
 console.log(typeof undefined);
@@ -22,6 +22,7 @@ console.log(typeof undefined);
 // Output
 // 6
 // sarfaraz
+
 // string
 // number
 // object
