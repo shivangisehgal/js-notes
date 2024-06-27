@@ -1,54 +1,23 @@
-//----------------- Number conversion ------------------
-let score = "Sarfaraz";
-//let score = true
-// let score = undefined;
-// let score = null;
-// let score = "33abc"
-// let score = "33"
-
-// console.log(typeof score);
-// console.log(typeof(score));
-
-// let valueInNumber = Number(score);
-// console.log(typeof valueInNumber);
-// console.log(valueInNumber);
-
-//------------------- Boolean conversion ----------------
-
-// let isLoggedIn = 1;
-// let isLoggedIn = "";
-// let isLoggedIn = "Sarfaraz";
-// let booleanIsLoggedIn = Boolean(isLoggedIn);
-// console.log(booleanIsLoggedIn);
-
-//------------------- String conversion ----------------
-// let someNumber = 33;
-// let stringInNumber = String(someNumber);
-// console.log(stringInNumber);
-// console.log(typeof stringInNumber);
-
-//------------------- Operations ----------------
-let value = 3;
-let negValue = -value;
-console.log(negValue);
-
-//Basic math
-// console.log(2+2);
-// console.log(2-2);
-// console.log(2*2);
-// console.log(2**3); //it means 2 power of 3
-// console.log(2/2);
-// console.log(2%2);
-
-let str1 = "hello";
-let str2 = "sarfaraz";
-
-let str3 = str1 + str2;
-console.log(str3);
-
 //---- Tricky conversion
-console.log("1" + 2);
-console.log(1 + "2");
-console.log("1" + 2 + 2);
-console.log(1 + 2 + "2");
-console.log(((3 + 4) * 5) % 3);
+
+console.log("1" + 4 + 2); //142, string
+console.log(1 + "4" + 2); //142, string
+console.log(1 + 4 + "2"); //52, string
+
+console.log(1 + 4 + "2" + 3 + 8); //5238, string
+
+console.log("1" + false); // 1false
+console.log(false + "1"); // false1
+console.log(false + "1" + 2 + 4);// false124, same thing as above
+
+console.log(false + 2 + 4 + "1"); // 61, string | when false is added with number, it is treated as 0, SAME FOR NULL
+console.log(true + 2 + 4 + "1");// 71, string | when false is added with number, it is treated as 1
+
+console.log(true + 2 + 4 + "1" + 3 + 8);// 7138
+
+console.log(null + "1" + 2);// null12
+console.log(null + 1 + "2" + 5 + 8);// 1258
+
+//HENCE,
+//STRING SE PEHLE => MATHS for numbers, STRING for rest
+//STRING KE BAAD => STRING (in between of two strings mein bhi same)
