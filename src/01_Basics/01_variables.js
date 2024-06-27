@@ -7,12 +7,16 @@ accountCity = "Hyderabad";
 accountEmail = "sh@sh.com";
 accountPassword = "212121";
 accountCity = "Bengaluru";
-let accountState;
+let accountState; //hence, accountState = undefined
 
-console.table([
+console.log([
   accountId,
   accountEmail,
   accountPassword,
   accountCity,
   accountState
 ]);
+
+
+// Output
+// [ 144553, 'sh@sh.com', '212121', 'Bengaluru', undefined ]
