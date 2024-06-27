@@ -1,15 +1,15 @@
 // const score = 400;
 // console.log(score);
 
-// const balance = new Number(100);
+const balance = new Number(100);
 // console.log(balance);
 // console.log(typeof balance);
 // console.log(balance.toString());
 // console.log(typeof balance);
-// console.log(balance.toFixed(2));
+console.log(balance.toFixed(2));  //100.00, uptil '2' decimal places
 
-// const otherNumber = 23.8966;
-// console.log(otherNumber.toPrecision(3));
+const otherNumber = 23.8966;
+console.log(otherNumber.toPrecision(3)); //only '3' digits will be given. 
 
 // const hundreds = 1000000;
 // console.log(hundreds.toLocaleString('en-IN'));
