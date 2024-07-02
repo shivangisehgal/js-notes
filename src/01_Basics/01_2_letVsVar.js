@@ -1,5 +1,5 @@
 var a = 5; //function-scoped: available throughout
-let b = 5; //block-scoped only
+let b = 5; //block-scoped only, cannot be re-declared in same scope.
 
 function varScoping() {
     var x = 1;
