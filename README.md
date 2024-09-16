@@ -973,7 +973,8 @@ document.getElementById('firstHeading').innerHTML = "<h1>Chai aur code<h1/>"
   1) Blocking Code: Block the flow of the program ➜ Read the file
   2) Non-Blocking Code:Does not block execution ➜ Read file Async
 - It is based on the use case, what code we need to use either blocking or non blocking
-- Example for non blocking code, till we store the data in db and get response that entry is done ➜ then give the message to the user that registration is successful or not, then we should go ahead with non blocking operation.
+- Example for where blocking code is reuired: ill we store the data in db and get response that entry is done ➜ then give the message to the user that registration is successful or not, then we should go ahead with blocking operation.
+  
 - JS Engine: It is a complete javascript engine, which execute the javascript
 - JS Engine is made up of 1) Memory Heap 2) Call stack
 - Web API: We will get Web API in browser, we wont get anywhere, we call it in sometime Node environment
