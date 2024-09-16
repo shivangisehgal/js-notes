@@ -24,11 +24,18 @@
     // clearInterval(intervalId);
 
     //Scenario: On Start button click, start the interval, on stop button click stop the intervalc
-    document.querySelector("#start").addEventListener("click", function () {
-      sayDate();
-    });
-    document.querySelector("#stop").addEventListener("click", function () {
-      clearInterval(intervalId);
-    });
+    const printDate = function(){
+        console.log(Date.now());
+    }
+
+    let st;
+
+    document.querySelector("#start").addEventListener('click', function(){
+       st = setInterval(printDate, 1000);
+    }, false);
+
+    document.querySelector("#stop").addEventListener('click', function(){
+        clearInterval(st);
+    }, false);
   </script>
 </html>
